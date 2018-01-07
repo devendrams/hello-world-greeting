@@ -1,6 +1,6 @@
 node('docker') {
     stage('Poll') {
-        /usr/bin/git url: "https://github.com/devendrams/hello-world-greeting.git"
+        /usr/bin/git clone https://github.com/devendrams/hello-world-greeting.git
     }
     
     stage('Build & Unit Test') {
