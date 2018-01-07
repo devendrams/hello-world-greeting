@@ -1,6 +1,6 @@
 node('docker') {
     stage('Poll') {
-        checkout scm
+        git url: "https://github.com/devendrams/hello-world-greeting.git"
     }
     
     stage('Build & Unit Test') {
