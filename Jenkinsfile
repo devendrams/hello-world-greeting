@@ -1,6 +1,6 @@
 node('docker') {
     stage('Poll') {
-        /usr/bin/git clone https://github.com/devendrams/hello-world-greeting.git
+        checkout scm
     }
     
     stage('Build & Unit Test') {
